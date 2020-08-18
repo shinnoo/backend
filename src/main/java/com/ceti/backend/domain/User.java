@@ -58,26 +58,26 @@ public class User extends AbstractAuditingEntity implements Serializable {
     @Column(nullable = false)
     private boolean activated = false;
 
-    @Size(min = 2, max = 10)
-    @Column(name = "lang_key", length = 10)
-    private String langKey;
+//    @Size(min = 2, max = 10)
+//    @Column(name = "lang_key", length = 10)
+//    private String langKey;
 
     @Size(max = 256)
     @Column(name = "image_url", length = 256)
     private String imageUrl;
 
-    @Size(max = 20)
-    @Column(name = "activation_key", length = 20)
-    @JsonIgnore
-    private String activationKey;
+//    @Size(max = 20)
+//    @Column(name = "activation_key", length = 20)
+//    @JsonIgnore
+//    private String activationKey;
 
-    @Size(max = 20)
-    @Column(name = "reset_key", length = 20)
-    @JsonIgnore
-    private String resetKey;
-
-    @Column(name = "reset_date")
-    private Instant resetDate = null;
+//    @Size(max = 20)
+//    @Column(name = "reset_key", length = 20)
+//    @JsonIgnore
+//    private String resetKey;
+//
+//    @Column(name = "reset_date")
+//    private Instant resetDate = null;
 
     @JsonIgnore
     @ManyToMany
@@ -153,37 +153,37 @@ public class User extends AbstractAuditingEntity implements Serializable {
         this.activated = activated;
     }
 
-    public String getActivationKey() {
-        return activationKey;
-    }
-
-    public void setActivationKey(String activationKey) {
-        this.activationKey = activationKey;
-    }
-
-    public String getResetKey() {
-        return resetKey;
-    }
-
-    public void setResetKey(String resetKey) {
-        this.resetKey = resetKey;
-    }
-
-    public Instant getResetDate() {
-        return resetDate;
-    }
-
-    public void setResetDate(Instant resetDate) {
-        this.resetDate = resetDate;
-    }
-
-    public String getLangKey() {
-        return langKey;
-    }
-
-    public void setLangKey(String langKey) {
-        this.langKey = langKey;
-    }
+//    public String getActivationKey() {
+//        return activationKey;
+//    }
+//
+//    public void setActivationKey(String activationKey) {
+//        this.activationKey = activationKey;
+//    }
+//
+//    public String getResetKey() {
+//        return resetKey;
+//    }
+//
+//    public void setResetKey(String resetKey) {
+//        this.resetKey = resetKey;
+//    }
+//
+//    public Instant getResetDate() {
+//        return resetDate;
+//    }
+//
+//    public void setResetDate(Instant resetDate) {
+//        this.resetDate = resetDate;
+//    }
+//
+//    public String getLangKey() {
+//        return langKey;
+//    }
+//
+//    public void setLangKey(String langKey) {
+//        this.langKey = langKey;
+//    }
 
     public Set<Authority> getAuthorities() {
         return authorities;

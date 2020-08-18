@@ -39,8 +39,6 @@ public class UserDTO {
 
     private boolean activated = false;
 
-    @Size(min = 2, max = 10)
-    private String langKey;
 
     private String createdBy;
 
@@ -64,7 +62,6 @@ public class UserDTO {
         this.email = user.getEmail();
         this.activated = user.getActivated();
         this.imageUrl = user.getImageUrl();
-        this.langKey = user.getLangKey();
         this.createdBy = user.getCreatedBy();
         this.createdDate = user.getCreatedDate();
         this.lastModifiedBy = user.getLastModifiedBy();
@@ -130,13 +127,6 @@ public class UserDTO {
         this.activated = activated;
     }
 
-    public String getLangKey() {
-        return langKey;
-    }
-
-    public void setLangKey(String langKey) {
-        this.langKey = langKey;
-    }
 
     public String getCreatedBy() {
         return createdBy;
@@ -187,7 +177,6 @@ public class UserDTO {
             ", email='" + email + '\'' +
             ", imageUrl='" + imageUrl + '\'' +
             ", activated=" + activated +
-            ", langKey='" + langKey + '\'' +
             ", createdBy=" + createdBy +
             ", createdDate=" + createdDate +
             ", lastModifiedBy='" + lastModifiedBy + '\'' +
