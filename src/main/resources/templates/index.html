@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<head th:replace="fragments/head :: head"></head>
+
+<body class="">
+    <h1>CETI WEB</h1>
+    <div class="wrapper">
+        
+        <div th:replace="fragments/sidebar :: sidebar"></div>
+        
+        <div class="main-panel">
+            
+            <nav th:replace="fragments/navbar :: navbar"></nav>
+            
+            <main th:replace="fragments/main :: main"></main>
+            
+            <footer th:replace="fragments/footer :: footer"></footer>
+            <div class="overlay"></div>
+        </div>
+    </div>
+    
+    
+    <div th:replace="fragments/script :: script"></div>
+</body>
+</html>
